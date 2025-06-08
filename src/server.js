@@ -7,7 +7,9 @@ const init = async () => {
         host: '0.0.0.0',
         routes: {
             cors: {
-                origin: process.env.NODE_ENV === 'production' ? ['https://your-vercel-deployment-url.vercel.app'] : ['http://localhost:8080']
+                origin: process.env.NODE_ENV === 'production'
+                    ? ['https://arah-api1.vercel.app']  // Replace with your Vercel deployment URL
+                    : ['http://localhost:8080']
             }
         }
     });
